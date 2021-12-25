@@ -1,0 +1,22 @@
+<header *ngIf="isUserAuthenticated()">
+
+    <nav  class="navbar navbar-expand-md navbar-dark bg-dark">
+
+        <ul class="navbar-nav">
+            <li><a *ngIf="isUserAuthenticated()" routerLink="/home" class="nav-link"> Home </a></li>
+            <li><a *ngIf="isUserAuthenticated()" routerLink="/bitcoin" class="nav-link"> Bitcoin </a></li>
+            <li><a *ngIf="isUserAuthenticated()" routerLink="/info" class="nav-link"> Information </a></li>
+        </ul>
+        
+    <ul class="navbar-nav navbar-collapse justify-content-end">
+        <li>
+             <div style="padding:5px;" *ngIf="isUserAuthenticated()" >
+                <button (click)=handleLogout() class=" btn btn-success">Logout</button>
+            </div>
+        </li>
+
+    </ul>
+    </nav>
+</header>
+
+

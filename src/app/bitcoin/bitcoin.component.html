@@ -1,0 +1,8 @@
+<p style="font-size: large; color:black;font-weight: bold;">Currency:</p>
+
+<div>
+    <p *ngIf="valueBit!=null" style="font-weight: bolder;"> EUR: {{valueBit.eur}}</p>
+    <p *ngIf="valueBit!=null" style="font-weight: bolder;"> GBP: {{valueBit.gbp}}</p>
+    <p *ngIf="valueBit!=null" style="font-weight: bolder;"> USD: {{valueBit.usd}}</p>
+</div>
+<button class="btn btn-danger mr-2" (click)="getValue()" type="button" >{{name}}</button>

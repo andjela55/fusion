@@ -1,0 +1,29 @@
+<div class="body">
+    
+    <div class="container" style="border: solid black; margin-top: 10%; " >
+       <div class="data" style="margin-left: 30%; padding:2%">
+        <div>
+            <h1>Login</h1>
+            <div>
+                <label>Username: </label> &nbsp; <input type="text" name="username" [(ngModel)]="username"
+                    placeholder="username">
+
+            </div>
+            <div>
+                <label>Password :</label> &nbsp; <input type="password" name="password" [(ngModel)]="password"
+                    placeholder="******">
+            </div>
+        </div>
+        <div style="color:red; " *ngIf='invalidLogin'>{{errorMessage}}
+        </div>
+        <div>
+            
+        </div>
+        <div style="padding:5px;">
+            <button (click)=handleLogin() class=" btn btn-success">Login</button>
+        </div>
+       </div>
+    </div>
+    <div>
+    </div>
+</div>
