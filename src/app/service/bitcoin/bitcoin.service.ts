@@ -36,7 +36,7 @@ export class BitcoinService {
           console.log(resData)
           const bitData: BitcoinData = new BitcoinData("0", "0", "0");
 
-          console.log("EUR " + resData.bpi.EUR.rate);
+         // console.log("EUR " + resData.bpi.EUR.rate);
 
           bitData.eur = resData.bpi.EUR.rate;
           bitData.gbp = resData.bpi.GBP.rate;
