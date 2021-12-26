@@ -35,7 +35,7 @@ export class BitcoinComponent implements OnInit {
    
 
     if (this.start == true) {
-      this.subscription = interval(1000).subscribe(x => {
+      this.subscription = interval(30000).subscribe(x => {
         
         this.bitcoinService.getBitcoinValue().subscribe(res => { });
         console.log("Izvrsio sam http zahtev");
